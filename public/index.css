@@ -11,47 +11,46 @@ body {
   text-align: center;
   margin-bottom: 30px;
   font-weight: semibold;
-  color : #00000056;
+  color: #00000056;
 }
 
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap : 20px;
+  gap: 20px;
 }
 
-.card{
+.card {
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
 }
 
-.card-header{
+.card-header {
   font-size: 0.9em;
   margin-bottom: 10px;
-  display : flex;
+  display: flex;
   justify-content: center;
-  gap : 10px;
-  color :#0000008a;
+  gap: 10px;
+  color: #0000008a;
 }
 
-.message{
+.message {
   text-align: center;
 }
 
-.to-form-button{
-  width : 100%;
-  display : flex;
+.to-form-button {
+  width: 100%;
+  display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 30px;
 }
 
-::-webkit-scrollbar{
-  width : 0;
+::-webkit-scrollbar {
+  width: 0;
 }
-
 
 form {
   display: flex;
@@ -91,15 +90,49 @@ button {
   font-weight: bold;
 }
 
-.buttons{
-    display: flex;
-    justify-content: space-between;;
+.buttons {
+  display: flex;
+  justify-content: space-between;
 }
 
-.buttons > button:first-child{
+.buttons > button:first-child {
   background-color: transparent;
-  border : #0000003d solid 1px;
-  color : #7814143d;
+  border: #0000003d solid 1px;
+  color: #7814143d;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 80vh;
+  box-sizing: border-box;
+  width : 400px;
+  margin : 0 auto;
+}
+
+.about-container{
+  padding : 1rem;
+  box-shadow: 0px 0px 8px #0000003d;
+  border-radius : 8px;
+}
+
+.main-container h1 {
+  font-size: 2rem;
+  color: #0000007a;
+  text-align: center;
+  margin : 2rem 0;
+}
+.about-container p {
+  display : flex;
+  color : rgba(0, 0, 0, 0.597)
+}
+
+.about {
+  font-weight: bold;
+  color: #000000;
+  white-space: nowrap;
 }
 
 @media (max-width: 600px) {
@@ -109,5 +142,9 @@ button {
 
   .container {
     grid-template-columns: 1fr;
-  };
+  }
+
+  .main-container{
+    width : 100%;
+  }
 }
