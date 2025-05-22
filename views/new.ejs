@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document | <%= title %> </title>
+</head>
+<body>
+    <form action="/new" method="POST">
+        <label for="name">
+          Name:
+          <input type="text" name="name" id="name" required>
+        </label>
+        <label for="message">
+          Message:
+          <textarea name="message" id="message" rows="8" cols="30"  required></textarea>
+        </label>
+        <div class="buttons">
+          <button type="button">
+              <a href="/">Back to home</a>
+          </button>
+          <button type="submit">Submit</button>
+        </div>
+        
+    </form>
+   
+</body>
+</html>

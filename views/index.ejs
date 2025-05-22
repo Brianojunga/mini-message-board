@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>BOARD | <%= title %> </title>
+</head>
+<body>
+    <h1 class="header">MINI MESSAGE BOARD</h1>
+    <div class="container">
+      <% rows.forEach(row => { %>
+          <div class="card">
+            <div class="card-header">
+              <h2><%= row.name %></h2>
+              <h2><%= row.time %></h2>
+            </div>
+            <p class="message"><%= row.message %></p>
+            <a href="/<%= row.id %>">About Message</a>
+          </div>
+      <% }) %>
+    </div>
+    <div class="to-form-button">
+      <button >
+        <a href="/new">Add message</a>
+      </button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document | <%= title %> </title>
+</head>
+<body>
+  <div class="main-container">
+    <div class="about-container">
+      <h1>About Message</h1>
+      <p>
+        <span class="about">Name : </span>
+        <span> <%= user.name %></span>
+      </p>
+      <p>
+        <span class="about">Time sent : </span>
+        <span><%= user.time %></span>
+      </p>
+      <p>
+        <span class="about">Message : </span>
+        <span><%= user.message %></span>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
